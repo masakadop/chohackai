@@ -2,6 +2,7 @@
 
 import { ArrowRight, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -52,13 +53,15 @@ export function HeroSection() {
             <span style={{ fontFamily: 'var(--font-noto-sans-jp)' }}>参加する</span>
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-muted-foreground/30 text-foreground hover:bg-muted/50 px-8 py-6 text-lg"
-          >
-            <span style={{ fontFamily: 'var(--font-noto-sans-jp)' }}>詳しく見る</span>
-          </Button>
+          <Link href="/works">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-muted-foreground/30 text-foreground hover:bg-muted/50 px-8 py-6 text-lg"
+            >
+              <span style={{ fontFamily: 'var(--font-noto-sans-jp)' }}>成果物を見る</span>
+            </Button>
+          </Link>
         </div>
         
         {/* Stats */}
