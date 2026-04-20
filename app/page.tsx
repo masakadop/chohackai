@@ -1,0 +1,17 @@
+import { HeroSection } from "@/components/hero-section";
+import { FeaturesSection } from "@/components/features-section";
+import { ScheduleSection } from "@/components/schedule-section";
+import { CtaSection } from "@/components/cta-section";
+import { Footer } from "@/components/footer";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <HeroSection />
+      <FeaturesSection />
+      <ScheduleSection />
+      <CtaSection />
+      <Footer />
+    </main>
+  );
+}
