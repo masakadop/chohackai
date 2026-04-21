@@ -1,3 +1,4 @@
+import Link from "next/link";
 export function Footer() {
   return (
     <footer className="py-8 px-4 border-t border-border">
@@ -9,9 +10,14 @@ export function Footer() {
           <span className="text-muted-foreground font-mono text-sm">// CHO-HAKKAI</span>
         </div>
         
-        <p className="text-muted-foreground text-sm font-mono">
-          © {new Date().getFullYear()} 朝hack会. All rights reserved.
-        </p>
+        <div className="flex items-center gap-4 text-sm">
+          <Link href="/tr" className="text-primary font-mono hover:underline">
+            TR チェック
+          </Link>
+          <p className="text-muted-foreground font-mono">
+            © {new Date().getFullYear()} 朝hack会. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
